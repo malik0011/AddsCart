@@ -9,13 +9,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Calendar;
+import java.util.Set;
 
 public class SetDate extends AppCompatActivity {
     TextView selectedDate;
     String SelectedDateS;
-    Button selectDate,continue_btn;
+    Button selectDate,nextBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +25,7 @@ public class SetDate extends AppCompatActivity {
         setContentView(R.layout.activity_set_date);
         selectedDate = (TextView) findViewById(R.id.selectedDate);
         selectDate = (Button) findViewById(R.id.selectDate);
-        continue_btn = findViewById(R.id.btn_continue);
+        nextBtn = (Button) findViewById(R.id.nextBtn);
 
         //initialize calender
         Calendar calendar = Calendar.getInstance();
@@ -34,7 +36,7 @@ public class SetDate extends AppCompatActivity {
         int month = calendar.get(Calendar.MONTH);
         //get day
         int day = calendar.get(Calendar.DAY_OF_MONTH);
-
+        SelectedDateS ="";
         selectDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,10 +58,18 @@ public class SetDate extends AppCompatActivity {
             }
         });
 
-        continue_btn.setOnClickListener(new View.OnClickListener() {
+
+        nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(SetDate.this, ConfirmPickupActivity.class).putExtra("selectedDate",SelectedDateS));
+            public void onClick(View view) {
+                if(!(SelectedDateS.isEmpty())){
+                    Toast.makeText(SetDate.this, "Selected Date:"+SelectedDateS, Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(SetDate.this,ConfirmPickupActivity.class);
+                    startActivity(i);
+                }
+                else{
+                    Toast.makeText(SetDate.this, "Please Selected A Date", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

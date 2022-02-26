@@ -311,7 +311,7 @@ public class SelectLocationFromMap extends AppCompatActivity {
         next = (Button) sheetDialog.findViewById(R.id.nextBtn);
         radioGroup = (RadioGroup) sheetDialog.findViewById(R.id.radio_Group);
         sheetDialog.show();
-        radioS ="";
+        radioS ="Home";
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
