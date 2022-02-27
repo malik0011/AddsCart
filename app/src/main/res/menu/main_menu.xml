@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" android:enabled="true">
+        <item android:icon="@drawable/boy"  android:title="Profile"/>
+        <item android:icon="@drawable/boy" android:title="Pickup request"/>
+        <item android:icon="@drawable/boy" android:title="How it works"/>
+        <item android:icon="@drawable/boy" android:title="About Us"/>
+    </group>
+    <item android:title="Others">
+    <menu>
+        <item android:icon="@drawable/ic_my_location"  android:title="Log out"/>
+        <item android:icon="@drawable/ic_call_us" android:title="Call Us"/>
+    </menu>
+    </item>
+</menu>
