@@ -9,7 +9,7 @@
     <item android:title="Others">
     <menu>
         <item android:icon="@drawable/ic_my_location"  android:title="Log out"/>
-        <item android:icon="@drawable/ic_call_us" android:title="Call Us"/>
+        <item android:id="@+id/call_us" android:icon="@drawable/ic_call_us" android:title="Call Us"/>
     </menu>
     </item>
 </menu>

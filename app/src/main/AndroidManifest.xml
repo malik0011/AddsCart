@@ -5,18 +5,23 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-
+        <activity
+            android:name=".HowItWorks"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,46 +31,46 @@
         <activity
             android:name=".OnBoardingScreen"
             android:exported="false" />
-
-        <activity android:name=".Login_Phone"
-            android:exported="false"/>
-        <activity android:name=".UserDetails"
-            android:exported="false"/>
-        <activity android:name=".Verify_Number"
-            android:exported="false"/>
-
+        <activity
+            android:name=".Login_Phone"
+            android:exported="false" />
+        <activity
+            android:name=".UserDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Verify_Number"
+            android:exported="false" />
         <activity
             android:name=".SelectLocationFromMap"
             android:exported="false" />
-
         <activity
             android:name=".FormFillupActivity"
             android:exported="false" />
-
         <activity
             android:name=".SetDate"
             android:exported="false" />
-
-        <activity android:name=".ConfirmPickupActivity"
-            android:exported="false"/>
-
-        <activity android:name=".DonateOrGetActivity"
-            android:exported="false"/>
-
-        <activity android:name=".ProfilePage"
-            android:exported="false"/>
-        <activity android:name=".Impact"
-            android:exported="false"/>
-        <activity android:name=".confirmation"
-            android:exported="false"/>
+        <activity
+            android:name=".ConfirmPickupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DonateOrGetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".Impact"
+            android:exported="false" />
+        <activity
+            android:name=".confirmation"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBCE8DVjURtaJp1rpbigQZD7Io-FZSmQIE" />

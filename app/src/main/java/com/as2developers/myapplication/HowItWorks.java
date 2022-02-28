@@ -1,30 +1,29 @@
 package com.as2developers.myapplication;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.widget.Toast;
-import android.widget.Toolbar;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Toast;
+import android.widget.Toolbar;
+
 import com.google.android.material.navigation.NavigationView;
 
-public class ProfilePage extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class HowItWorks extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     //for slide navigation bar
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_page);
+        setContentView(R.layout.activity_how_it_works);
 
         //hooks for navigation bar
         drawerLayout =findViewById(R.id.drawer_layout);
@@ -35,6 +34,7 @@ public class ProfilePage extends AppCompatActivity implements NavigationView.OnN
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
     }
+
     //also for navigation bar
     @Override
     public void onBackPressed() {
@@ -46,22 +46,24 @@ public class ProfilePage extends AppCompatActivity implements NavigationView.OnN
         }
     }
 
-    //for slide navigation
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.profile:
-                Toast.makeText(this, "You are already in profile!", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getApplicationContext(),ProfilePage.class);
+                startActivity(i);
                 break;
             case R.id.pickup:
                 Toast.makeText(this, "Opening to a new pickup..", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.howItWorks:
-                startActivity(new Intent(this,HowItWorks.class));
+                Toast.makeText(this, "You are already in!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.aboutUs:
-                Intent i = new Intent(getApplicationContext(),AboutUs.class);
-                startActivity(i);
+              //  Toast.makeText(this, "you are in about us!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(),AboutUs.class);
+                startActivity(intent);
                 break;
             case R.id.call_us:
 //                Intent callIntent = new Intent(Intent.ACTION_CALL);

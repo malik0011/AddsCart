@@ -21,6 +21,7 @@ import android.graphics.drawable.Drawable;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -431,9 +432,17 @@ public class SelectLocationFromMap extends AppCompatActivity implements Navigati
                 Toast.makeText(this, "Opening to a new pickup..", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.howItWorks:
-                Toast.makeText(this, "Gathering information...", Toast.LENGTH_SHORT).show();
-//                Intent i = new Intent(getApplicationContext(),ProfilePage.class);
-//                startActivity(i);
+                startActivity(new Intent(this,HowItWorks.class));
+                break;
+            case R.id.aboutUs:
+                startActivity(new Intent(this,AboutUs.class));
+                break;
+            case R.id.call_us:
+//                Intent callIntent = new Intent(Intent.ACTION_CALL);
+//                String s = "+918867825522";
+//                callIntent.setData(Uri.parse("tel:"+s));//change the number.
+//                startActivity(callIntent);
+                Toast.makeText(this, "This feature will coming soon!", Toast.LENGTH_SHORT).show();
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);

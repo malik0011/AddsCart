@@ -3,41 +3,62 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.181" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/drawable/bottom_sheet_bg.xml" value="0.1" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/drawable/ic_back.xml" value="0.1" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/drawable/ic_launcher_background.xml" value="0.181" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/drawable/ic_location.xml" value="0.1" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/drawable/ic_marker.xml" value="0.181" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/drawable/ic_my_location.xml" value="0.181" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/drawable/ic_mylocation.xml" value="0.181" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/drawable/input_bg.xml" value="0.181" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/drawable/location_bg.xml" value="0.1395" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/drawable/search_bg.xml" value="0.181" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/drawable/top_bg.xml" value="0.181" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/layout/activity_confirm_pickup.xml" value="0.15942028985507245" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/layout/activity_confirmation.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/layout/activity_login_phone.xml" value="0.152" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/layout/activity_main.xml" value="0.12335359675785208" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/layout/activity_select_location_from_map.xml" value="0.264" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/layout/activity_set_date.xml" value="0.2" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/layout/activity_user_details.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/layout/activity_verify_number.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/layout/location_confirm.xml" value="0.2" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/layout/menu_header.xml" value="0.2" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/layout/slides_layout.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/menu/main_menu.xml" value="0.176" />
-        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/1st project/AddsCart/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.167" />
+        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/New folder/AddsCart/app/src/main/res/layout/activity_about_us.xml" value="0.20820863616930313" />
+        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/New folder/AddsCart/app/src/main/res/layout/activity_how_it_works.xml" value="0.152" />
+        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/New folder/AddsCart/app/src/main/res/layout/activity_profile_page.xml" value="0.190234375" />
+        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/New folder/AddsCart/app/src/main/res/layout/activity_select_location_from_map.xml" value="0.152" />
+        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/New folder/AddsCart/app/src/main/res/layout/activity_set_date.xml" value="0.12" />
+        <entry key="..\:/Users/Ayan/Desktop/AS2DEV/New folder/AddsCart/app/src/main/res/menu/main_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/bg.xml" value="0.1345" />
         <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/ic_launcher_background.xml" value="0.184" />
+        <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/rounded_button.xml" value="0.1345" />
+        <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/font/amaranth.xml" value="0.1" />
+        <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/font/montserrat.xml" value="0.1" />
+        <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_confirm_pickup.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_confirmation.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_form_fillup.xml" value="0.22" />
+        <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_login_phone.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_select_location_from_map.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_set_date.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_verify_number.xml" value="0.1" />
+        <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/layout/location_confirm.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/Mayan/AndroidStudioProjects/AddsCart/app/src/main/res/layout/slides_layout.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.147" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/bg.xml" value="0.147" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/custom_background_white_10r_grey_border.xml" value="0.147" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.147" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/ic_baseline_circle_24.xml" value="0.147" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/ic_location.xml" value="0.147" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/ic_marker.xml" value="0.147" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/ic_my_location.xml" value="0.147" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/ic_outline_my_location_24.xml" value="0.147" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/round_actionbar.xml" value="0.147" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/xml_back.xml" value="0.147" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/xml_menu.xml" value="0.147" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/drawable/xml_rupee.xml" value="0.147" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_confirm_pickup.xml" value="0.2" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_confirmation.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_donate_or_get.xml" value="0.2" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_form_fillup.xml" value="0.2" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_impact.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_login_phone.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_main.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_profile_page.xml" value="0.2" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_select_location_from_map.xml" value="0.2" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_set_date.xml" value="0.2" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_splash_screen.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_user_details.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/activity_verify_number.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/location_confirm.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/spand/AndroidStudioProjects/AddsCart/app/src/main/res/layout/slides_layout.xml" value="0.20521590423257802" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
