@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:id="@+id/drawer_layout"
     tools:openDrawer="start"
     >
 
@@ -13,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:id="@+id/nav_view"
         app:headerLayout="@layout/menu_header"
         app:itemTextColor="@color/green"
         app:menu="@menu/main_menu"

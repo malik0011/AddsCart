@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single" android:enabled="true">
-        <item android:icon="@drawable/boy"  android:title="Profile"/>
-        <item android:icon="@drawable/boy" android:title="Pickup request"/>
-        <item android:icon="@drawable/boy" android:title="How it works"/>
-        <item android:icon="@drawable/boy" android:title="About Us"/>
+        <item android:id="@+id/profile" android:icon="@drawable/boy"  android:title="Profile"/>
+        <item android:id="@+id/pickup" android:icon="@drawable/ic_pickup_req" android:title="Pickup request"/>
+        <item android:id="@+id/howItWorks" android:icon="@drawable/ic_information" android:title="How it works"/>
+        <item android:id="@+id/aboutUs" android:icon="@drawable/ic_us" android:title="About Us"/>
     </group>
     <item android:title="Others">
     <menu>

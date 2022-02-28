@@ -25,10 +25,10 @@ public class ViewPagerAdapter extends PagerAdapter {
     }
 
     int[] images ={
-            R.drawable.onboard01,
+            R.drawable.new_garbage,
             R.drawable.onboard02,
-            R.drawable.onboard03,
-            R.drawable.onboard04
+            R.drawable.undraw_package,
+            R.drawable.undraw_on_the_way
 
     };
     int[] headings={

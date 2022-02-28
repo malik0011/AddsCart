@@ -60,11 +60,11 @@ public class SplashScreen extends AppCompatActivity {
                     SharedPreferences.Editor editor = onboardingScreen.edit();
                     editor.putBoolean("FirstTime",false);
                     editor.commit();
-                    startActivity(new Intent(SplashScreen.this, SelectLocationFromMap.class));
+                    startActivity(new Intent(SplashScreen.this, OnBoardingScreen.class));
                     finish();
                 }
                 else{
-                    startActivity(new Intent(SplashScreen.this, SelectLocationFromMap.class)); //i have to change this
+                    startActivity(new Intent(SplashScreen.this, Login_Phone.class)); //i have to change this
                     finish();
                 }
 
