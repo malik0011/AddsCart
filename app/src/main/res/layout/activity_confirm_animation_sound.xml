@@ -29,7 +29,7 @@
             android:id="@+id/tv"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="180dp"
             android:fontFamily="@font/montserrat"
             android:gravity="center_vertical"
             android:text="Order confirmed!"

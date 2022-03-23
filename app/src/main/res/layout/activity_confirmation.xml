@@ -270,6 +270,44 @@
                 </LinearLayout>
 
             </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/rv8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv6"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thank you for choosing"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text=" AddsCart!"
+                        android:textColor="@color/green"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
         </LinearLayout>
 
     </ScrollView>
@@ -285,7 +323,7 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="@color/black"
         android:paddingVertical="10dp"
-        android:text="Back to Home Page"
+        android:text="Exit App"
         android:textSize="18sp" />
 
 </RelativeLayout>
