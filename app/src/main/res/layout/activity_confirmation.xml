@@ -323,6 +323,7 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="@color/black"
         android:paddingVertical="10dp"
+        android:layout_marginTop="30dp"
         android:text="Exit App"
         android:textSize="18sp" />
 
