@@ -300,7 +300,7 @@ public class FormFillupActivity extends AppCompatActivity implements NavigationV
                     Intent intent = getIntent();
                     String mobile = intent.getStringExtra("mobile");
                     startActivity(new Intent(FormFillupActivity.this, SetDate.class).putExtra("items", s).putExtra("itemCount",Integer.toString(itemcount)).putExtra("AddressLine",AddressLine).putExtra("LocationType",locationType).putExtra("Latitude",Lat).putExtra("Longitude",Lon).putExtra("locality",locality).putExtra("longAddress",longAddress).putExtra("mobile",mobile));
-                    Toast.makeText(FormFillupActivity.this, s, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(FormFillupActivity.this, s, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -348,7 +348,8 @@ public class FormFillupActivity extends AppCompatActivity implements NavigationV
                 break;
             case R.id.logOut:
                 Toast.makeText(this, "Logging out..", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(this,Login_Phone.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(this,Login_Phone.class));
                 finish();
                 break;
         }

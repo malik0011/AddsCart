@@ -85,12 +85,13 @@ public class confirmation extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(confirmation.this, "Back to Home Page", Toast.LENGTH_SHORT).show();
-                Intent i=new Intent(confirmation.this,SelectLocationFromMap.class);
-
-                startActivity(i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-
-                finish();
+//                Toast.makeText(confirmation.this, "Back to Home Page", Toast.LENGTH_SHORT).show();
+//                Intent i=new Intent(confirmation.this,SelectLocationFromMap.class);
+//
+//                startActivity(i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+//
+//                finish();
+                finishAffinity();
             }
         });
     }
@@ -179,9 +180,10 @@ public class confirmation extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(confirmation.this, "Back to Home Page..", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(confirmation.this,SelectLocationFromMap.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        finish();
+        //Toast.makeText(confirmation.this, "Thank You for u", Toast.LENGTH_SHORT).show();
+        //startActivity(new Intent(confirmation.this,SelectLocationFromMap.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        //finish();
+        this.finishAffinity();
     }
 }
 

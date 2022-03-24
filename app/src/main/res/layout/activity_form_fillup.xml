@@ -181,7 +181,7 @@
                                     android:text="Paper"
                                     android:textAlignment="center"
                                     android:textColor="@color/black"
-                                    android:textSize="17sp" />
+                                    android:textSize="16sp" />
 
                                 <TextView
                                     android:id="@+id/paper_price"
@@ -191,7 +191,8 @@
                                     android:text="12/kg"
                                     android:textAlignment="center"
                                     android:textColor="@color/black"
-                                    android:textSize="13sp" />
+                                    android:textSize="13sp"
+                                    android:layout_marginBottom="2dp"/>
 
                             </LinearLayout>
 
@@ -231,7 +232,7 @@
                                     android:text="Plastic"
                                     android:textAlignment="center"
                                     android:textColor="@color/black"
-                                    android:textSize="17sp" />
+                                    android:textSize="16sp" />
 
                                 <TextView
                                     android:id="@+id/plasticPrice"
@@ -281,7 +282,7 @@
                                     android:text="Metals"
                                     android:textAlignment="center"
                                     android:textColor="@color/black"
-                                    android:textSize="17sp" />
+                                    android:textSize="16sp" />
 
                                 <TextView
                                     android:id="@+id/metal_price"
@@ -385,7 +386,7 @@
                                     android:text="E-Waste"
                                     android:textAlignment="center"
                                     android:textColor="@color/black"
-                                    android:textSize="17sp" />
+                                    android:textSize="16sp" />
 
                                 <TextView
                                     android:id="@+id/ewasteprice"
@@ -433,7 +434,7 @@
                                     android:text="Iron items"
                                     android:textAlignment="center"
                                     android:textColor="@color/black"
-                                    android:textSize="17sp" />
+                                    android:textSize="16sp" />
 
                                 <TextView
                                     android:id="@+id/ironprice"
@@ -481,7 +482,7 @@
                                     android:text="Other items"
                                     android:textAlignment="center"
                                     android:textColor="@color/black"
-                                    android:textSize="17sp" />
+                                    android:textSize="16sp" />
 
                                 <TextView
                                     android:id="@+id/otheritems_price"
