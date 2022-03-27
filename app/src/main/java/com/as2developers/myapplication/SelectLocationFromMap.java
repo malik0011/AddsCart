@@ -165,6 +165,7 @@ public class SelectLocationFromMap extends AppCompatActivity implements Navigati
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_location_from_map);
         //hooks for navigation bar
+        Toast.makeText(this, "Wait a while till it fetches your location..", Toast.LENGTH_SHORT).show();
         init();
         drawerLayout =findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);

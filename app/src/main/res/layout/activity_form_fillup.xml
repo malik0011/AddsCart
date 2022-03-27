@@ -156,8 +156,8 @@
                             android:layout_weight="1"
                             android:foreground="?android:selectableItemBackground"
                             android:onClick="PaperClick"
-                            app:cardCornerRadius="10dp"
-                            app:cardElevation="0dp">
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="6dp">
 
                             <LinearLayout
                                 android:id="@+id/first_layout"
@@ -187,12 +187,12 @@
                                     android:id="@+id/paper_price"
                                     android:layout_width="55dp"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
                                     android:drawableLeft="@drawable/xml_rupee"
                                     android:text="12/kg"
                                     android:textAlignment="center"
                                     android:textColor="@color/black"
-                                    android:textSize="13sp"
-                                    android:layout_marginBottom="2dp"/>
+                                    android:textSize="13sp" />
 
                             </LinearLayout>
 
@@ -207,8 +207,8 @@
                             android:layout_weight="1"
                             android:foreground="?android:selectableItemBackground"
                             android:onClick="PlasticClick"
-                            app:cardCornerRadius="10dp"
-                            app:cardElevation="0dp">
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="6dp">
 
                             <LinearLayout
                                 android:id="@+id/second_layout"
@@ -257,8 +257,8 @@
                             android:layout_weight="1"
                             android:foreground="?android:selectableItemBackground"
                             android:onClick="MetalsClick"
-                            app:cardCornerRadius="10dp"
-                            app:cardElevation="0dp">
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="6dp">
 
                             <LinearLayout
                                 android:id="@+id/thirdLinear_layout"
@@ -361,8 +361,8 @@
                             android:layout_weight="1"
                             android:foreground="?android:selectableItemBackground"
                             android:onClick="E_Waste"
-                            app:cardCornerRadius="10dp"
-                            app:cardElevation="0dp">
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="6dp">
 
                             <LinearLayout
                                 android:id="@+id/fourth_linear_layout"
@@ -409,8 +409,8 @@
                             android:layout_weight="1"
                             android:foreground="?android:selectableItemBackground"
                             android:onClick="IronClick"
-                            app:cardCornerRadius="10dp"
-                            app:cardElevation="0dp">
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="6dp">
 
                             <LinearLayout
                                 android:id="@+id/fifth_layout"
@@ -457,8 +457,8 @@
                             android:layout_weight="1"
                             android:foreground="?android:selectableItemBackground"
                             android:onClick="OthersClick"
-                            app:cardCornerRadius="10dp"
-                            app:cardElevation="0dp">
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="6dp">
 
                             <LinearLayout
                                 android:id="@+id/sixth_layout"
