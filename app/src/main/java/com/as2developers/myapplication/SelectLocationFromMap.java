@@ -256,11 +256,7 @@ public class SelectLocationFromMap extends AppCompatActivity implements Navigati
                                 return false;
                             }
                         });
-//                        }else{
-                        //when  permission denied
-                        //again asking for permission
-//                            ActivityCompat.requestPermissions(SelectLocationFromMap.this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},44);
-//                        }
+//
                     }
 
                     @Override
@@ -874,7 +870,7 @@ public class SelectLocationFromMap extends AppCompatActivity implements Navigati
 
                 fields = Arrays.asList(Place.Field.ID,Place.Field.NAME,Place.Field.LAT_LNG);
 
-                Places.initialize(getApplicationContext(),"AIzaSyBCE8DVjURtaJp1rpbigQZD7Io-FZSmQIE"); //we have to put place api key here
+                Places.initialize(getApplicationContext(),"AIzaSyDR65hxh0Qrv3Xsb775Q_BSUgG_AvhkNEA"); //we have to put place api key here
                 //create a new place cline instance
                 PlacesClient placesClient = Places.createClient(getApplicationContext());
                 System.out.println(homeLat+" "+homeLon);
