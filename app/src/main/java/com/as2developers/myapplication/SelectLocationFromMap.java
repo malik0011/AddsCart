@@ -601,6 +601,7 @@ public class SelectLocationFromMap extends AppCompatActivity implements Navigati
                 next.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+                        Toast.makeText(SelectLocationFromMap.this, "Please enter H/No,Plot No!", Toast.LENGTH_SHORT).show();
                         Intent i = new Intent(SelectLocationFromMap.this,FormFillupActivity.class);
                         //passing the value
                         //getting some value
@@ -637,10 +638,10 @@ public class SelectLocationFromMap extends AppCompatActivity implements Navigati
 
                         //now if location type selected then only go to next activity
                         //also we have to select the house number
-                        if(radioS.length()==0){
-                            Toast.makeText(SelectLocationFromMap.this, "Please Select A location type.eg: home", Toast.LENGTH_SHORT).show();
-                        }else{
-                            if(!userLocality.isEmpty()){
+//                        if(radioS.length()==0){
+//                            Toast.makeText(SelectLocationFromMap.this, "Please Select A location type.eg: home", Toast.LENGTH_SHORT).show();
+//                        }else{
+                            if(userLocality.length()>0){
                                 startActivity(i);
                                 Toast.makeText(SelectLocationFromMap.this, radioS, Toast.LENGTH_SHORT).show();
                                 //System.out.println(userLocality+"  "+UserAddressLine);
@@ -649,7 +650,7 @@ public class SelectLocationFromMap extends AppCompatActivity implements Navigati
                             }
                         }
 
-                    }
+                    //}
                 });
 
 

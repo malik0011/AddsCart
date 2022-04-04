@@ -94,10 +94,10 @@ public class SetDate extends AppCompatActivity implements NavigationView.OnNavig
                         String sd,sm,sy;
                         sd= String.valueOf(i2);
                         sm=String.valueOf(i1);
-                        if(i2+1<10){
+                        if(i2+1<=10){
                             sd="0"+(i2);
                         }
-                        if(i1+1<10){
+                        if(i1+1<=10){
                             sm="0"+(i1);
                         }
                         SelectedDateS = sd + "-" + sm + "-" + (i);
