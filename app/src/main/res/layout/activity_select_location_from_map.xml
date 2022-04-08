@@ -113,23 +113,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:gravity="center"
         android:layout_marginHorizontal="30dp"
-        android:orientation="vertical"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/continueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:text="Continue"
-            android:textSize="18sp"
-            android:enabled="false"
-            android:paddingVertical="10dp"
-            android:textAllCaps="false"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/amaranth"
             android:onClick="Continue"
-            tools:ignore="OnClick" />
+            android:paddingVertical="12dp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#F6F6F6"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="OnClick"
+
+            android:visibility="gone"/>
 
     </LinearLayout>
 

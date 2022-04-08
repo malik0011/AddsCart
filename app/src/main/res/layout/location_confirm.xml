@@ -108,7 +108,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="H/No, Plot No (Required)"
+            android:hint="H/No, Plot No"
             >
 
             <com.google.android.material.textfield.TextInputEditText
