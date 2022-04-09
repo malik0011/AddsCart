@@ -228,6 +228,19 @@
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="1dp"
+        android:text="We do not pickup wood, cloth and glass."
+        android:textColor="#676666"
+        android:textSize="12sp" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
@@ -239,6 +252,7 @@
         android:backgroundTint="@color/black"
         android:elevation="10dp"
         android:paddingVertical="10dp"
-        android:text="Proceed"
+        android:textAllCaps="false"
+        android:text="Raise pickup request"
         android:textSize="18sp" />
 </RelativeLayout>

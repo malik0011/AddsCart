@@ -350,7 +350,9 @@ public class SelectLocationFromMap extends FragmentActivity implements Navigatio
             latLngGlobal = home;
             googleMapGlobal.animateCamera(CameraUpdateFactory.newLatLngZoom(home,17));
             if(markerGlobal!=null) markerGlobal.remove();
+            googleMapGlobal.clear();
             latLngGlobal = home;
+
 
             //creating marker options
             int height = 100;
@@ -358,12 +360,12 @@ public class SelectLocationFromMap extends FragmentActivity implements Navigatio
             Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable. pin);
             Bitmap smallMarker = Bitmap.createScaledBitmap(b, width, height, false);
             BitmapDescriptor smallMarkerIcon = BitmapDescriptorFactory.fromBitmap(smallMarker);
-            MarkerOptions options = new MarkerOptions().position(home).title("You are here!").draggable(true).icon(smallMarkerIcon);
+            MarkerOptions options = new MarkerOptions().position(home).title("Hold & Drag To Move Pin!").draggable(true).icon(smallMarkerIcon);
             optionsGlobal = options;
             //now zoom into the map
             googleMapGlobal.animateCamera(CameraUpdateFactory.newLatLngZoom(home,17)); //   <<---here we can change the ZOOM ratio..
             //adding marker on map
-            googleMapGlobal.addMarker(options);
+            googleMapGlobal.addMarker(options).showInfoWindow();
             latGlobal = homeLat;
             lonGlobal = homeLon;
 
@@ -687,12 +689,12 @@ public class SelectLocationFromMap extends FragmentActivity implements Navigatio
 
 
                 //creating marker options and adding custom marker
-                MarkerOptions options = new MarkerOptions().position(latLng).title("You are here!").draggable(true).icon(smallMarkerIcon);
+                MarkerOptions options = new MarkerOptions().position(latLng).title("Hold & Drag To Move Pin!").draggable(true).icon(smallMarkerIcon);
                 optionsGlobal = options;
                 //now zoom into the map
                 googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,17)); //   <<---here we can change the ZOOM ratio..
                 //adding marker on map
-                googleMap.addMarker(options);
+                googleMap.addMarker(options).showInfoWindow();
                 googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
                 continueBtn.setVisibility(View.VISIBLE);
                 //making the data global to share in there activity
@@ -777,6 +779,7 @@ public class SelectLocationFromMap extends FragmentActivity implements Navigatio
                         if(markerGlobal!=null){ //to remove previous location marker
                             markerGlobal.remove();
                         }
+                        googleMapGlobal.clear();
                         Address address = addressList.get(0);
                         LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
                         latLngGlobal = latLng;
@@ -790,12 +793,12 @@ public class SelectLocationFromMap extends FragmentActivity implements Navigatio
                         Bitmap smallMarker = Bitmap.createScaledBitmap(b, width, height, false);
                         BitmapDescriptor smallMarkerIcon = BitmapDescriptorFactory.fromBitmap(smallMarker);
                         //adding it
-                        MarkerOptions options = new MarkerOptions().position(latLng).title("You are here!").draggable(true).icon(smallMarkerIcon);
+                        MarkerOptions options = new MarkerOptions().position(latLng).title("Hold & Drag To Move Pin!").draggable(true).icon(smallMarkerIcon);
                         optionsGlobal = options;
                         //now zoom into the map
                         googleMapGlobal.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,17)); //   <<---here we can change the ZOOM ratio..
                         //adding marker on map
-                        googleMapGlobal.addMarker(options);
+                        googleMapGlobal.addMarker(options).showInfoWindow();
                         // googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
 
 
@@ -854,12 +857,12 @@ public class SelectLocationFromMap extends FragmentActivity implements Navigatio
         Bitmap smallMarker = Bitmap.createScaledBitmap(b, width, height, false);
         BitmapDescriptor smallMarkerIcon = BitmapDescriptorFactory.fromBitmap(smallMarker);
         //adding it
-        MarkerOptions options = new MarkerOptions().position(latLng).title("Your selected place!").draggable(true).icon(smallMarkerIcon);
+        MarkerOptions options = new MarkerOptions().position(latLng).title("Hold & Drag To Move Pin!").draggable(true).icon(smallMarkerIcon);
         optionsGlobal = options;
         //now zoom into the map
         googleMapGlobal.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,17)); //   <<---here we can change the ZOOM ratio..
         //adding marker on map
-        googleMapGlobal.addMarker(options);
+        googleMapGlobal.addMarker(options).showInfoWindow();
        // googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
 
 

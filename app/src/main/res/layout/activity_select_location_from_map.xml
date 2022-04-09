@@ -122,7 +122,7 @@
             android:id="@+id/continueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/green"
+            android:backgroundTint="@color/black"
             android:fontFamily="@font/amaranth"
             android:onClick="Continue"
             android:paddingVertical="12dp"
@@ -131,9 +131,9 @@
             android:textColor="#F6F6F6"
             android:textSize="22sp"
             android:textStyle="bold"
-            tools:ignore="OnClick"
+            android:visibility="gone"
 
-            android:visibility="gone"/>
+            tools:ignore="OnClick" />
 
     </LinearLayout>
 
