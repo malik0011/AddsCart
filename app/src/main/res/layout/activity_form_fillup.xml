@@ -564,19 +564,33 @@
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 -->
-                <Button
-                    android:id="@+id/btn_continue"
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                    android:backgroundTint="@color/black"
-                    android:gravity="center"
-                    android:paddingVertical="10dp"
-                    android:text="Continue"
-                    android:layout_marginTop="20dp"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="We do not pickup wood, cloth and glass."
+                        android:textColor="#676666"
+                        android:textSize="12sp"
+                        />
+                    <Button
+                        android:id="@+id/btn_continue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center"
+                        android:paddingVertical="10dp"
+                        android:text="Continue"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
 
