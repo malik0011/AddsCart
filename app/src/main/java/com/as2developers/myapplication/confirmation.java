@@ -86,12 +86,20 @@ public class confirmation extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //                Toast.makeText(confirmation.this, "Back to Home Page", Toast.LENGTH_SHORT).show();
-//                Intent i=new Intent(confirmation.this,SelectLocationFromMap.class);
+                Intent i=new Intent(confirmation.this,FormFillupActivity.class);
+
 //
-//                startActivity(i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                i.putExtra("Latitude",getIntent().getStringExtra("Latitude"));
+                i.putExtra("Longitude",getIntent().getStringExtra("Longitude"));
+                i.putExtra("locationType",getIntent().getStringExtra("locationType"));
+                i.putExtra("LocationDetails",getIntent().getStringExtra("AddressLine"));
+                //i.putExtra("pin",getIntent().getStringExtra("Latitude"));
+                i.putExtra("locality",getIntent().getStringExtra("locality"));
+                i.putExtra("longAddress",getIntent().getStringExtra("longAddress"));
+                startActivity(i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
 //
 //                finish();
-                finishAffinity();
+                //finishAffinity();
             }
         });
     }

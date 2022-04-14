@@ -36,7 +36,7 @@ public class ConfirmAnimationSound extends AppCompatActivity {
                 i.putExtra("Longitude",getIntent().getStringExtra("Longitude"));
                 i.putExtra("locality",getIntent().getStringExtra("locality"));
                 i.putExtra("longAddress",getIntent().getStringExtra("longAddress"));
-                startActivity(i);
+                startActivity(i.putExtra("locationType",getIntent().getStringExtra("locationType").toString()));
                 finish();
             }
         },2010);

@@ -134,7 +134,7 @@ public class SetDate extends AppCompatActivity implements NavigationView.OnNavig
                     Intent intent = getIntent();
                     String mobile = intent.getStringExtra("mobile");
                     startActivity(new Intent(SetDate.this, ConfirmPickupActivity.class).putExtra("date",SelectedDateS).putExtra("items",pv).putExtra("AddressLine",address).putExtra("LocationType",locationType).putExtra("itemCount",itemCount)
-                                    .putExtra("Longitude",Lon).putExtra("Latitude",Lat).putExtra("locality",locality).putExtra("longAddress",longAddress).putExtra("mobile",mobile)
+                                    .putExtra("Longitude",Lon).putExtra("Latitude",Lat).putExtra("locality",locality).putExtra("longAddress",longAddress).putExtra("mobile",mobile).putExtra("locationType",getIntent().getStringExtra("locationType").toString())
                     );
                 }
             }

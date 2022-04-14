@@ -299,7 +299,10 @@ public class FormFillupActivity extends AppCompatActivity implements NavigationV
                 else {
                     Intent intent = getIntent();
                     String mobile = intent.getStringExtra("mobile");
-                    startActivity(new Intent(FormFillupActivity.this, SetDate.class).putExtra("items", s).putExtra("itemCount",Integer.toString(itemcount)).putExtra("AddressLine",AddressLine).putExtra("LocationType",locationType).putExtra("Latitude",Lat).putExtra("Longitude",Lon).putExtra("locality",locality).putExtra("longAddress",longAddress).putExtra("mobile",mobile));
+                    startActivity(new Intent(FormFillupActivity.this, SetDate.class).putExtra("items", s).putExtra("itemCount",Integer.toString(itemcount)).
+                            putExtra("AddressLine",AddressLine).putExtra("LocationType",locationType)
+                            .putExtra("Latitude",Lat).putExtra("Longitude",Lon).putExtra("locality",locality).
+                                    putExtra("longAddress",longAddress).putExtra("mobile",mobile).putExtra("locationType",getIntent().getStringExtra("locationType").toString()));
                     //Toast.makeText(FormFillupActivity.this, s, Toast.LENGTH_SHORT).show();
                 }
             }

@@ -833,6 +833,7 @@ public class DonateOrGetActivity extends AppCompatActivity {
                 i.putExtra("Longitude",getIntent().getStringExtra("Longitude"));
                 i.putExtra("locality",getIntent().getStringExtra("locality"));
                 i.putExtra("longAddress",getIntent().getStringExtra("longAddress"));
+                i.putExtra("locationType",getIntent().getStringExtra("locationType").toString());
 
                 Intent intent = getIntent();
                 AddressLine1 = intent.getStringExtra("AddressLine");
@@ -895,6 +896,7 @@ public class DonateOrGetActivity extends AppCompatActivity {
                 i.putExtra("Longitude",getIntent().getStringExtra("Longitude"));
                 i.putExtra("locality",getIntent().getStringExtra("locality"));
                 i.putExtra("longAddress",getIntent().getStringExtra("longAddress"));
+                i.putExtra("locationType",getIntent().getStringExtra("locationType").toString());
 
                 Intent intent = getIntent();
                 AddressLine1 = intent.getStringExtra("AddressLine");

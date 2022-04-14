@@ -34,7 +34,7 @@ public class Impact extends AppCompatActivity {
                 i.putExtra("date",date);
                 i.putExtra("Latitude",getIntent().getStringExtra("Latitude"));
                 i.putExtra("Longitude",getIntent().getStringExtra("Longitude"));
-                startActivity(i);
+                startActivity(i.putExtra("locationType",getIntent().getStringExtra("locationType").toString()));
             }
         });
         back.setOnClickListener(new View.OnClickListener() {

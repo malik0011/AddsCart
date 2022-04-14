@@ -321,11 +321,12 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="@color/black"
         android:paddingVertical="10dp"
-        android:layout_marginTop="30dp"
-        android:text="Exit App"
+        android:textAllCaps="false"
+        android:text="Go To Main Page"
         android:textSize="18sp" />
 
 </RelativeLayout>
