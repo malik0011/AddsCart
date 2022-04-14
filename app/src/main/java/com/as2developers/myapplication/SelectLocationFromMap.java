@@ -707,7 +707,7 @@ public class SelectLocationFromMap extends FragmentActivity implements Navigatio
 
                 fields = Arrays.asList(Place.Field.ID,Place.Field.NAME,Place.Field.LAT_LNG);
 
-                Places.initialize(getApplicationContext(),"AIzaSyDR65hxh0Qrv3Xsb775Q_BSUgG_AvhkNEA"); //we have to put place api key here
+                Places.initialize(getApplicationContext(),"@string/api_key_for_maps"); //we have to put place api key here
                 //create a new place cline instance
                 PlacesClient placesClient = Places.createClient(getApplicationContext());
                 System.out.println(homeLat+" "+homeLon);

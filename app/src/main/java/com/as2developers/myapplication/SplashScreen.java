@@ -59,52 +59,84 @@ public class SplashScreen extends AppCompatActivity {
         gifSplash.setAnimation(downAnim);
         logoname.setAnimation(upAnim);
 
-        Dexter.withContext(getApplicationContext()).withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
-                .withListener(new PermissionListener() {
-                    @Override
-                    public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
-                        new Handler().postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                logoname.clearAnimation();
-                                gifSplash.clearAnimation();
-                                logoname.setAnimation(fadeoutAnim);
-                                gifSplash.setAnimation(fadeoutAnim);
-                                logoname.setVisibility(View.INVISIBLE);
+//        Dexter.withContext(getApplicationContext()).withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
+//                .withListener(new PermissionListener() {
+//                    @Override
+//                    public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
+////                        new Handler().postDelayed(new Runnable() {
+////                            @Override
+////                            public void run() {
+////                                logoname.clearAnimation();
+////                                gifSplash.clearAnimation();
+////                                logoname.setAnimation(fadeoutAnim);
+////                                gifSplash.setAnimation(fadeoutAnim);
+////                                logoname.setVisibility(View.INVISIBLE);
+////
+////                            }
+////                        },1500);
+////
+////                        new Handler().postDelayed(new Runnable() {
+////                            @Override
+////                            public void run() {
+////                                onboardingScreen = getSharedPreferences("OnBoardingScreen",MODE_PRIVATE);
+////                                boolean isfirstTime = onboardingScreen.getBoolean("FirstTime",true);
+////                                if (isfirstTime){
+////                                    SharedPreferences.Editor editor = onboardingScreen.edit();
+////                                    editor.putBoolean("FirstTime",false);
+////                                    editor.commit();
+////                                    startActivity(new Intent(SplashScreen.this, OnBoardingScreen.class));
+////                                    finish();
+////                                }
+////                                else{
+////                                    startActivity(new Intent(SplashScreen.this, Login_Phone.class));
+////                                    finish();
+////                                }
+////
+////                            }
+////                        }, 1500);
+//                    }
+//                    @Override
+//                    public void onPermissionDenied(PermissionDeniedResponse permissionDeniedResponse) {
+//                        Toast.makeText(SplashScreen.this, "Permission DenidedQ!", Toast.LENGTH_SHORT).show();
+//                    }
+//
+//                    @Override
+//                    public void onPermissionRationaleShouldBeShown(PermissionRequest permissionRequest, PermissionToken permissionToken) {
+//                        permissionToken.continuePermissionRequest();
+//                    }
+//                }).check();
 
-                            }
-                        },1500);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                logoname.clearAnimation();
+                gifSplash.clearAnimation();
+                logoname.setAnimation(fadeoutAnim);
+                gifSplash.setAnimation(fadeoutAnim);
+                logoname.setVisibility(View.INVISIBLE);
 
-                        new Handler().postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                onboardingScreen = getSharedPreferences("OnBoardingScreen",MODE_PRIVATE);
-                                boolean isfirstTime = onboardingScreen.getBoolean("FirstTime",true);
-                                if (isfirstTime){
-                                    SharedPreferences.Editor editor = onboardingScreen.edit();
-                                    editor.putBoolean("FirstTime",false);
-                                    editor.commit();
-                                    startActivity(new Intent(SplashScreen.this, OnBoardingScreen.class));
-                                    finish();
-                                }
-                                else{
-                                    startActivity(new Intent(SplashScreen.this, Login_Phone.class));
-                                    finish();
-                                }
+            }
+        },1500);
 
-                            }
-                        }, 1500);
-                    }
-                    @Override
-                    public void onPermissionDenied(PermissionDeniedResponse permissionDeniedResponse) {
-                        Toast.makeText(SplashScreen.this, "Permission DenidedQ!", Toast.LENGTH_SHORT).show();
-                    }
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                onboardingScreen = getSharedPreferences("OnBoardingScreen",MODE_PRIVATE);
+                boolean isfirstTime = onboardingScreen.getBoolean("FirstTime",true);
+                if (isfirstTime){
+                    SharedPreferences.Editor editor = onboardingScreen.edit();
+                    editor.putBoolean("FirstTime",false);
+                    editor.commit();
+                    startActivity(new Intent(SplashScreen.this, OnBoardingScreen.class));
+                    finish();
+                }
+                else{
+                    startActivity(new Intent(SplashScreen.this, Login_Phone.class));
+                    finish();
+                }
 
-                    @Override
-                    public void onPermissionRationaleShouldBeShown(PermissionRequest permissionRequest, PermissionToken permissionToken) {
-                        permissionToken.continuePermissionRequest();
-                    }
-                }).check();
+            }
+        }, 1500);
 
 
 
